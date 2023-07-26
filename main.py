@@ -78,6 +78,7 @@ class Comment(db.Model):
     parent_post = relationship("BlogPost", back_populates="comments")
     text = db.Column(db.Text, nullable=False)
 
+
 # Create all the tables in the database
 db.create_all()
 
